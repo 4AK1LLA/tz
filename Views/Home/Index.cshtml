@@ -1,0 +1,5 @@
+﻿<h2>"Folder" - @ViewBag.ParentFolder.FolderName</h2>
+
+@foreach (var childFolder in @ViewBag.ChildFolders) {
+    <a href="/@ViewBag.Path/@childFolder.FolderName">@childFolder.FolderName</a><br>
+}
